@@ -71,22 +71,39 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+  margin: 0;
 }
 
 body {
+  position: relative;
+  top: 0;
+  left: 0;
   min-width: 290px;
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--white-background);
+  color: var(--white-simple);
 }
 
 .container {
   position: relative;
   top: 0;
   left: 0;
-  max-width: 1200px;
+  max-width: 1260px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: calc(290px + (1200 - 290) * ((100vw - 320px) / (1024 - 320)));
+    padding: 0 calc(15px + (30 - 15) * ((100vw - 320px) / (1024 - 320)));
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 290px;
+  }
 }

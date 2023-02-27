@@ -1,3 +1,8 @@
 @import 'modules/normalize.css';
 @import 'modules/style.css';
 @import 'modules/var.css';
+@import 'modules/header.css';
+@import 'modules/screen.css';
+@import 'modules/advantage.css';
+@import 'modules/form.css';
+@import 'modules/footer.css';

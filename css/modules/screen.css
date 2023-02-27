@@ -1,0 +1,97 @@
+
+.main__screen {
+  width: 100%;
+  height: 732px;
+  background-image: url('../../img/main_01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main__body {
+  padding: 228px 0 0 0;
+}
+
+.main_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__item:first-child {
+  width: 990px;
+  margin-bottom: 35px;
+}
+
+.main__item:nth-child(2) {
+  margin-bottom: 90px;
+}
+
+.main__title {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 61px;
+  text-align: center;
+}
+
+.main__paragraph {
+  max-width: 960px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.button {
+  padding: 12px 48px;
+  background-color: var(--blue);
+  color: var(--simple-white);
+  border-radius: 50px;
+  box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+}
+
+@media (max-width: 1600px) {
+  .main__screen {
+    height: calc(441px + (732 - 441) * ((100vw - 320px) / (1600 - 320)));
+  }
+
+  .main__body {
+    padding-top: calc(110px + (228 - 110) * ((100vw - 320px) / (1600 - 320)));
+  }
+
+  .main__item:first-child {
+    width: calc(290px + (990 - 290) * ((100vw - 320px) / (1600 - 320)));
+    margin-bottom: calc(23px + (35 - 23) * ((100vw - 320px) / (1600 - 320)));
+  }
+
+  .main__title {
+    font-size: calc(20px + (52 - 20) * ((100vw - 320px) / (1600 - 320)));
+    line-height: calc(23px + (61 - 23) * ((100vw - 320px) / (1600 - 320)));
+  }
+
+  .main__paragraph {
+    max-width: calc(290px + (960 - 290) * ((100vw - 30) / (1600 - 320)));
+    font-size: calc(13px + (22 - 13) * ((100vw - 320px) / (1600 - 320)));  
+    line-height: calc(20px + (31 - 20) * ((100vw - 320px) / (1600 - 320)));
+  }
+
+  .main__item:nth-child(2) {
+    margin-bottom: calc(54px + (94 - 54) * ((100vw - 320px) / (1600 - 320)));
+  }
+}
+
+@media (max-width: 1024px) {
+  .main__screen {
+    background-image: url('../../img/main_01_1024.jpg');
+  }
+}
+
+@media (max-width: 320px) {
+  .main__screen {
+    background-image: url('../../img/main_01_320.jpg');
+  }
+
+  .main__paragraph > span {
+    display: none;
+  }
+}
