@@ -80,6 +80,13 @@
 
   .adress > .adress__link:last-child {
     display: block;
+    transition-duration: .2s;
+    transition-property: transform scale;
+    transition-timing-function: ease-out;
+  }
+
+  .adress > .adress__link:last-child:hover {
+    transform: scale(150%);
   }
 
   .adress > .adress__link:nth-child(1) {
