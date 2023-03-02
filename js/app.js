@@ -47,6 +47,12 @@ window.addEventListener("resize", function () {
   } else if (window.matchMedia("(min-width: 515px)").matches) {
     app.classList.remove("swiper");
     app.classList.remove("mySwiper");
+    app.classList.remove("swiper-initialized");
+    app.classList.remove("swiper-horizontal");
+    app.classList.remove("swiper-backface-hidden");
+
+    list.style.removeProperty("transition-duration");
+    list.style.removeProperty("transform");
     list.classList.remove("swiper-wrapper");
 
     for (let i = 0; i <= item.length - 1; i++) {

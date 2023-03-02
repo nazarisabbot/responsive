@@ -26,6 +26,11 @@
   align-items: center;
 }
 
+.adress-footer__link:nth-child(1) {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
 .adress-footer > .adress-footer__link:last-child {
   display: none;
 }
@@ -34,7 +39,7 @@
   position: relative;
   font-weight: 700;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 15px;
 }
 

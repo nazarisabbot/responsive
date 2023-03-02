@@ -15,7 +15,7 @@
   font-size: 35px;
   line-height: 41px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .advantage__title_little {
@@ -48,7 +48,7 @@
   left: 100%;
   bottom: 50%;
   transform: translateY(50%);
-  margin-left: 23px;
+  margin-left: 28px;
 }
 
 .advantage__paragraph {
@@ -57,7 +57,7 @@
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 58px;
 }
 
 .advantage__app {
@@ -71,6 +71,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 56px;
 }
 
 .advantage__item {
@@ -84,9 +85,28 @@
   object-fit: cover;
 }
 
+.advantage__item figure > svg {
+  margin-bottom: 10px;
+  width: 122px;
+}
+
 .advantage__item figure figcaption {
   user-select: none;
 }
+
+
+.swiper .mySwiper {
+  display: none;
+}
+
+.swiper-wrapper {
+  display: none;
+}
+
+.swiper-slide {
+  display: none;
+}
+
 
 @media (max-width: 1600px) {
   .advantage {
@@ -97,12 +117,12 @@
   .advantage__title {
     font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1600 - 320)));
     line-height: calc(23px + (41 - 23) * ((100vw - 320px) / (1600 - 320)));
-    margin-bottom: calc(15px + (25 - 15) * ((100vw - 320px) / (1600 - 320)));
+    margin-bottom: calc(15px + (18 - 15) * ((100vw - 320px) / (1600 - 320)));
   }
 
   .advantage__title_little {
     font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320)));
-    margin-bottom: calc(26px + (35 - 26) * ((100vw - 320px) / (1600 - 320)));
+    margin-bottom: calc(26px + (28 - 26) * ((100vw - 320px) / (1600 - 320)));
   }
 
   .advantage__title_little::before,
@@ -115,7 +135,11 @@
     max-width: calc(290px + (724 - 290) * ((100vw - 320px) / (1600 - 320)));
     font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
     line-height: calc(17px + (25 - 17) * ((100vw - 320px) / (1600 - 320)));
-    margin-bottom: calc(40px + (50 - 40) * ((100vw - 320px) / (1600 - 320)));
+    margin-bottom: calc(40px + (58 - 40) * ((100vw - 320px) / (1600 - 320)));
+  }
+
+  .advantage__list {
+    gap: calc(20px + (56 - 20) * ((100vw - 320px) / (1600 - 320)));
   }
 
   .advantage__item > figure > svg {
@@ -128,7 +152,7 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1024px) {
   .advantage__list {
     flex-wrap: wrap;
     gap: 20px;
